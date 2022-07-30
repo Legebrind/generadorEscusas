@@ -19,14 +19,9 @@ window.onload = function() {
     "during my lunch",
     "while I was praying"
   ];
-  var aImprimir =
-    who[aleatorio(4)] +
-    " " +
-    action[aleatorio(4)] +
-    " " +
-    what[aleatorio(3)] +
-    " " +
-    when[aleatorio(5)];
+  var aImprimir = `${who[aleatorio(who.length)]} ${
+    action[aleatorio(action.length)]
+  } ${what[aleatorio(what.length)]} ${when[aleatorio(when.length)]}`;
   document.getElementById("mensaje").innerHTML = aImprimir;
 
   console.log("Hello Rigo from the console!");
